@@ -22,5 +22,11 @@ public class CarService {
         return carRepository.findById(carId).orElse(null);
     }
 
+    @Transactional
+    public Car getCarByName(String name){
+        return carRepository.findByName(name);
+    }
+
+
     // Outros métodos conforme necessário
 }

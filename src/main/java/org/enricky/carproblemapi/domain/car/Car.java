@@ -14,6 +14,7 @@ import java.util.UUID;
 public class Car {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
     UUID id;
 
     @ManyToMany
@@ -45,4 +46,5 @@ public class Car {
     protected void onUpdate() {
         updatedAt = LocalDateTime.now();
     }
+
 }

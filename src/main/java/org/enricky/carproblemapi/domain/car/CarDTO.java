@@ -16,9 +16,7 @@ public record CarDTO(
         String bodyType,
         String driveType,
         String color,
-        Set<UUID> problemIds){ // Adicione o campo problemIds
-
-
+        Set<UUID> problemIds){
     public Set<UUID> getProblemIds() {
         return problemIds;
     }
